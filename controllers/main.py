@@ -1,8 +1,8 @@
 from odoo import http
 from odoo.http import request
 import logging
-import json
-from werkzeug.wrappers import Response
+#import json
+#from werkzeug.wrappers import Response
 
 _logger = logging.getLogger(__name__)
 
@@ -14,7 +14,7 @@ class MyListController(http.Controller):
         Renders the main page template with static content.
         The dynamic list container is initially empty.
         """
-        _logger.info("Accessing /my_main_page (GET request)")
+        _logger.info("Accessing /my_main_page")
         return request.render('my_list_module.my_main_page_template', {
             'page_title': "My Main Page",
         })
@@ -26,7 +26,7 @@ class MyListController(http.Controller):
         Generates the list data, renders only the snippet template,
         and returns the HTML content as a JSON response.
         """
-        _logger.info("Accessing /my_list_content (JSON POST request)")
+        _logger.info("Accessing /my_list_content")
 
         # Look at the request params
         #request_params = kw.get('params', kw)
