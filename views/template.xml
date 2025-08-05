@@ -21,7 +21,7 @@
 
         <!-- The Reusable List Snippet Template -->
         <template id="my_list_snippet" name="My List Snippet">
-            <h3>Dynamic List (AJAX)</h3>
+            <h4>Dynamic List (AJAX)</h4>
             <ul>
                 <t t-foreach="items_for_list" t-as="item">
                     <li>

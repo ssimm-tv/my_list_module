@@ -13,7 +13,7 @@ import {
 } from "@web/core/network/rpc";
 
 const MyListWidget = publicWidget.Widget.extend({
-    selector: '#dynamic_list_container', // This widget will be active for this selector
+    selector: '#dynamic_list_container', // Link the widget to the id of the element
     
     start: async function () {
         console.log("Custom JS: MyListWidget started. Making RPC call...");
