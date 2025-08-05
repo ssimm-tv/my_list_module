@@ -1,8 +1,6 @@
 from odoo import http
 from odoo.http import request
 import logging
-#import json
-#from werkzeug.wrappers import Response
 
 _logger = logging.getLogger(__name__)
 
