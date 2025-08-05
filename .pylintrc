@@ -1,0 +1,8 @@
+[FORMAT]
+max-line-length=120
+
+[MASTER]
+init-hook = import sys; sys.path.append('C:/programs/odoo/odoo'); sys.path.append('C:/programs/odoo-tutorials')
+
+[MESSAGES CONTROL]
+disable=E0401

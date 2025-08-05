@@ -1,0 +1,17 @@
+{
+  // Pylance configuration
+  // replace ../odoo-tutorials with your directory (yes, this sux, and do it below too, so suxx2)
+  "python.analysis.extraPaths": [
+    "C:/programs/odoo/odoo",
+    "C:/programs/odoo/odoo/addons",
+    "C:/programs/odoo-tutorials"  
+  ],
+
+  // Pylint configuration
+  "python.linting.pylintPath": "pylint",
+  "python.linting.pylintArgs": [
+    "--rcfile=${workspaceFolder}/.pylintrc"
+  ],
+  "python.linting.pylintEnabled": true
+
+}

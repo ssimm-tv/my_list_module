@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <!-- The Main Page Template -->
+        <template id="my_main_page_template" name="My Main Page" t-name="my_list_module.my_main_page_template">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure">
+                    <div class="container">
+                        <h3 t-esc="page_title"/>
+                        <p>This is the main page content. The list below is loaded dynamically.</p>
+                        
+                        <!-- This is the empty <div> where our JavaScript will insert the list. -->
+                        <div id="dynamic_list_container">
+                            <p>Loading list...</p>
+                        </div>
+                        
+                        <p>This is content after the dynamic list container.</p>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <!-- The Reusable List Snippet Template -->
+        <template id="my_list_snippet" name="My List Snippet">
+            <h3>Dynamic List (AJAX)</h3>
+            <ul>
+                <t t-foreach="items_for_list" t-as="item">
+                    <li>
+                        <t t-esc="item['name']"/> (ID: <t t-esc="item['id']"/>)
+                    </li>
+                </t>
+            </ul>
+        </template>
+    </data>
+</odoo>
